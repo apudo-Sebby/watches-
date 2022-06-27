@@ -597,5 +597,132 @@ button {
 
 }
 /* swiper class */
+.testimonial-swiper {
+    margin-left: initial;
+    margin-right: initial;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: initial;
+    bottom: 5%;
+    width: initial;
+    height: initial;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
+    padding: .25rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.swiper-button-next {
+    right: initial;
+    left: 4rem;
+}
 
 /* NEW */
+.new__card {
+    position: relative;
+    text-align: center;
+    background-color: var(--container-color);
+    padding-top: 2rem;
+    border: 1px solid var(--border-color);
+    overflow-y: hidden;
+    transition: .3s;
+}
+
+.new__tag {
+    background-color: var(--first-color);
+    padding: .5rem 1rem;
+    color: #fff;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transition: .3s;
+}
+
+.new__img {
+    height: 215px;
+    margin-bottom: var(--mb-1);
+}
+
+.new__title,
+.new__price {
+    font-size: var(--h3-font-size);
+    font-weight: bold;
+}
+.new__title {
+    text-transform: uppercase;
+    margin-bottom: var(--mb-0-75);
+}
+
+.new__price {
+    display: block;
+    color: var(--first-color);
+    transition: .3s;
+}
+
+.new__button {
+    font-size: var(--small-font-size);
+    transform: translateY(1rem);
+    opacity: 0;
+}
+
+.new__card:hover {
+    background-color: var(--first-color);
+    box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
+    padding: 2rem 0 3rem 0;
+}
+
+.new__card:hover .new__tag {
+    background-color: var(--button-color);
+}
+
+.new__card:hover .new__price {
+    color: var(--title-color);
+    margin-bottom: var(--mb-1-5);
+}
+
+.new__card:hover .new__button {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* NEWSLETTER */
+.newsletter__bg {
+    background-color: var(--first-color);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    row-gap: 2rem;
+}
+
+.newsletter__title {
+    font-size: var(--h1-font-size);
+    color: hsl(0, 0%, 15%);
+    margin-bottom: var(--mb-1-5);
+}
+
+.newsletter__description {
+    color: hsl(0 0% 35%);
+}
+
+.newsletter__subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+ 
+.newsletter__input {
+    outline: none;
+    border: none;
+    background-color: hsl(0 0% 94%);
+    padding: 1.25rem 1rem;
+    color: hsl(0 0% 15%);
+}
