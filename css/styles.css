@@ -270,6 +270,9 @@ button {
 }
 
 /* Active Link */
+.active-link {
+    color: var(--first-color);
+}
 
 /* HOME */
 .home__container {
@@ -774,4 +777,32 @@ button {
     text-align: center;
     font-size: var(--small-font-size);
     color: var(--text-color-light);
+}
+
+/* SCROLL UP */
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
+    display: inline-flex;
+    padding: .25rem;
+    z-index: var(--z-tooltip);
+    opacity: .8;
+    transition: .4s;
+}
+
+.scrollup:hover {
+    opacity: 1;
+}
+
+.scrollup__icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+/* Show Scroll up */
+.show-scroll {
+    bottom: 3rem;
 }
