@@ -102,3 +102,22 @@ function scrollUp() {
      }
 }
 window.addEventListener('scroll', scrollUp)
+
+// CART SHOW
+const cart = document.getElementById('cart');
+      cartShop = document.getElementById('cart-shop');
+      cartClose = document.getElementById('cart-close');
+// Validate if constants exists 
+if (cartShop) {
+    cartShop.addEventListener('click', () =>{
+        cart.classList.add('show-cart')
+    });
+}
+
+// CART HIDDEN
+// Validate if constants exist 
+if (cartClose) {
+    cartClose.addEventListener('click', () => {
+        cart.classList.remove('show-cart')
+    });
+}
